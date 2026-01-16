@@ -87,9 +87,16 @@
 .post-content a,
 .post-meta .i18n_list li a,
 .toc a:hover {
-    box-shadow: 0 1px 0;
+    box-shadow: inset 0 -2px 0 var(--accent);
+    transition: box-shadow 0.2s ease-in-out;
+
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+}
+
+.post-content a:hover,
+.post-meta .i18n_list li a:hover {
+    box-shadow: inset 0 -3px 0 var(--accent);
 }
 
 .post-content a code {
