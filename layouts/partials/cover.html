@@ -1,4 +1,5 @@
 {{- with .cxt}} {{/* Apply proper context from dict */}}
+
 {{- if (and .Params.cover.image (not $.isHidden)) }}
 <figure class="entry-cover">
     {{- $loading := cond $.IsSingle "eager" "lazy" }}
@@ -54,12 +55,12 @@
         </a>
     {{- end -}}
 
-    {{- /*  Display Caption  */}}
+    <!-- {{- /*  Display Caption  */}}
     {{- if $.IsSingle }}
         {{ with .Params.cover.caption -}}
             <figcaption>{{ . | markdownify }}</figcaption>
         {{- end }}
-    {{- end }}
+    {{- end }} -->
 </figure>
 {{- end }}{{/* End image */}}
 {{- end -}}{{/* End context */ -}}
