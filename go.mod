@@ -1,3 +1,3 @@
-module github.com/adityatelange/hugo-PaperMod
+module github.com/somnisomni/Hugo-PaperMod-somni
 
 go 1.12
