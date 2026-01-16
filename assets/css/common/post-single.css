@@ -17,7 +17,8 @@
 .post-meta,
 .breadcrumbs {
     font-size: 16px;
-    color: var(--secondary);
+    /* color: var(--secondary); */
+    opacity: 70%;
 }
 
 .post-meta {
@@ -420,11 +421,20 @@ img.in-text {
     position: relative;
     display: flex;
     width: 100%;
-    height: var(--post-header-height);
+    height: auto;
     align-items: end;
     justify-content: center;
     padding: calc(var(--gap) * 2) var(--gap);
     overflow: hidden;
+}
+
+.post-header:has(.entry-cover img),
+.post-header:has(.entry-cover img) * {
+    color: var(--base-light);
+}
+
+.post-header:has(.entry-cover img) {
+    height: var(--post-header-height);
 }
 
 .post-header .entry-cover {
@@ -448,8 +458,8 @@ img.in-text {
     height: 100%;
     background: linear-gradient(
         to bottom,
-        rgb(0 0 0 / 50%) 0%,
-        rgb(0 0 0 / 70%) 100%);
+        rgb(0 0 0 / 25%) 0%,
+        rgb(0 0 0 / 66%) 100%);
 }
 
 .post-header .entry-cover img {
