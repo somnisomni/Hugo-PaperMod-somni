@@ -22,6 +22,12 @@
 
     <br />
 
+    {{- if site.Params.contentLicense }}
+    <span>{{ site.Params.contentLicense | markdownify }}</span>
+
+    <br />
+    {{- end }}
+
     <span>
         {{- if site.Params.fontLicense }}
         {{ site.Params.fontLicense | markdownify }}
