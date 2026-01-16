@@ -84,10 +84,19 @@
     font-size: 12px;
 }
 
+.post-content h1 > a,
+.post-content h2 > a,
+.post-content h3 > a,
+.post-content h4 > a,
+.post-content h5 > a,
+.post-content h6 > a {
+    box-shadow: none !important;
+}
+
 .post-content a,
 .post-meta .i18n_list li a,
 .toc a:hover {
-    box-shadow: inset 0 -2px 0 var(--accent);
+    box-shadow: inset 0 -1.5px 0 var(--accent);
     transition: box-shadow 0.2s ease-in-out;
 
     box-decoration-break: clone;
