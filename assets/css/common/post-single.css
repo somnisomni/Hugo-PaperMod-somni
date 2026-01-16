@@ -203,7 +203,10 @@
     font-size: 0.78em;
     line-height: 1.5;
     background: var(--code-bg);
-    border-radius: 2px;
+    color: var(--code-fg);
+    border-radius: 4px;
+    border: solid 1px;
+    border-color: rgb(from currentColor r g b / 20%);
 }
 
 .post-content pre code {
@@ -263,13 +266,9 @@
 .toc {
     margin-bottom: var(--content-gap);
     border: 1px solid var(--border);
-    background: var(--code-bg);
+    background: var(--entry);
     border-radius: var(--radius);
     padding: 0.4em;
-}
-
-[data-theme="dark"] .toc {
-    background: var(--entry);
 }
 
 .toc details summary {
