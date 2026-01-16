@@ -17,10 +17,6 @@
     margin-inline-end: 1px;
 }
 
-.footer span:last-child {
-    white-space: nowrap;
-}
-
 .footer a {
     color: inherit;
     border-bottom: 1px solid var(--secondary);
@@ -52,6 +48,10 @@
 .footer a:hover,
 .top-link:hover {
     color: var(--primary);
+}
+
+.footer .footer-powered-by {
+    white-space: nowrap;
 }
 
 .top-link:focus,
