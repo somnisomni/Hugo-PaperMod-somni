@@ -21,10 +21,6 @@
     opacity: 70%;
 }
 
-.post-meta {
-    font-weight: 300;
-}
-
 .breadcrumbs {
     display: flex;
     flex-wrap: wrap;
