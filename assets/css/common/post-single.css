@@ -55,16 +55,16 @@
 .post-content h4,
 .post-content h5,
 .post-content h6 {
-    margin: 24px 0 16px;
+    margin: 40px 0 16px;
 }
 
 .post-content h1 {
-    margin: 40px auto 32px;
+    margin: 56px auto 32px;
     font-size: 40px;
 }
 
 .post-content h2 {
-    margin: 32px auto 24px;
+    margin: 48px auto 24px;
     font-size: 32px;
 }
 
@@ -84,12 +84,12 @@
     font-size: 12px;
 }
 
-.post-content h1 > a,
-.post-content h2 > a,
-.post-content h3 > a,
-.post-content h4 > a,
-.post-content h5 > a,
-.post-content h6 > a {
+.post-content h1 > a.anchor,
+.post-content h2 > a.anchor,
+.post-content h3 > a.anchor,
+.post-content h4 > a.anchor,
+.post-content h5 > a.anchor,
+.post-content h6 > a.anchor {
     box-shadow: none !important;
 }
 
