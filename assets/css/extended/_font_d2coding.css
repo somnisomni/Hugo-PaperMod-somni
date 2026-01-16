@@ -1,0 +1,9 @@
+/* Korean monospace font: D2Coding (https://github.com/naver/d2codingfont) - SIL OFL v1.1 */
+@font-face {
+  font-family: "D2Coding";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: local("D2Coding"),
+       url("../../fonts/D2Coding/D2Coding.woff") format("woff");
+}

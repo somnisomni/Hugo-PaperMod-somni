@@ -1,0 +1,30 @@
+/* Korean UI font: Pretendard (https://github.com/orioncactus/pretendard) - SIL OFL v1.1 */
+@font-face {
+  font-family: "PretendardSubset";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: local("Pretendard"),
+       url("../../fonts/Pretendard-Subset/Pretendard-ExtraLight.subset.woff2") format("woff2"),
+       url("../../fonts/Pretendard-Subset/Pretendard-ExtraLight.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PretendardSubset";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Pretendard"),
+       url("../../fonts/Pretendard-Subset/Pretendard-Regular.subset.woff2") format("woff2"),
+       url("../../fonts/Pretendard-Subset/Pretendard-Regular.subset.woff") format("woff");
+}
+
+@font-face {
+  font-family: "PretendardSubset";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: local("Pretendard"),
+       url("../../fonts/Pretendard-Subset/Pretendard-SemiBold.subset.woff2") format("woff2"),
+       url("../../fonts/Pretendard-Subset/Pretendard-SemiBold.subset.woff") format("woff");
+}
