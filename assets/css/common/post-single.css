@@ -200,7 +200,7 @@
 .post-content code {
     margin: auto 4px;
     padding: 4px 6px;
-    font-size: 0.78em;
+    font-size: 0.825em;
     line-height: 1.5;
     background: var(--code-bg);
     color: var(--code-fg);
