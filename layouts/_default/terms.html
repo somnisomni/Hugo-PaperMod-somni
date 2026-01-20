@@ -2,7 +2,7 @@
 
 {{- if .Title }}
 <header class="page-header">
-    <h1>{{ .Title }}</h1>
+    <h1>{{ i18n (printf "list_title_%s" (lower (trim .Title " "))) | default .Title }}</h1>
     {{- if .Description }}
     <div class="post-description">
         {{ .Description }}
