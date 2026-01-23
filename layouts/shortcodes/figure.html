@@ -31,6 +31,9 @@
             {{- end -}}
             {{- if or (.Get "caption") (.Get "attr") -}}<p>
                 {{- .Get "caption" | markdownify -}}
+
+                {{- if or (.Get "caption") (.Get "attr") }}&nbsp;{{ end -}}
+
                 {{- with .Get "attrlink" }}
                     <a href="{{ . }}">
                 {{- end -}}
