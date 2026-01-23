@@ -31,9 +31,15 @@
     display: inline-flex;
 }
 
-.post-meta .i18n_list li {
+.post-meta .i18n_list li,
+.entry-footer .i18n_list li {
     list-style: none;
     margin: auto 3px;
+}
+
+.entry-footer .i18n_list a {
+    color: currentColor;
+    pointer-events: none;
 }
 
 .breadcrumbs a {
