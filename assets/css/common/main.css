@@ -51,6 +51,10 @@ pre {
     position: relative;
 }
 
+code, pre, pre code {
+    font-family: var(--font-monospace);
+}
+
 .copy-code {
     display: none;
     position: absolute;

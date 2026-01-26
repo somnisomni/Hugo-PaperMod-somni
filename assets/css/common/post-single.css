@@ -47,6 +47,7 @@
 }
 
 .post-content {
+    font-family: var(--font-content);
     color: var(--content);
     margin: 30px 0;
 }
