@@ -1,7 +1,7 @@
 /* Define font variables */
 :root {
   --font-body: "MaruBuri", "Noto Serif CJK KR", "Noto Serif CJK JP", "Noto Serif KR", "Noto Serif JP", "Noto Serif", serif;
-  --font-ui: "PretendardSubset", "Pretendard JP", "Pretendard", sans-serif;
+  --font-ui: "Pretendard JP", "Pretendard", sans-serif;
   --font-monospace: "D2Coding", "Noto Sans Mono CJK KR", "Noto Sans Mono CJK JP", "Noto Sans Mono", monospace, sans-serif;
 }
 
