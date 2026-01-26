@@ -19,10 +19,6 @@
             accesskey="t"
             title="Toggle theme (Alt + T)"
             aria-label="Toggle theme">
-      <div id="theme-auto">
-        {{ (resources.Get "images/icons/fa-circle-half-stroke-solid-full.svg").Content | safeHTML }}
-      </div>
-
       <div id="theme-light">
         {{ (resources.Get "images/icons/fa-sun-solid-full.svg").Content | safeHTML }}
       </div>
@@ -36,16 +32,13 @@
       document.getElementById("theme-toggle").addEventListener("click", () => {
         const html = document.querySelector("html");
 
-        if(html.dataset.theme === "auto") {
+        if(html.dataset.theme === "dark") {
           html.dataset.theme = "light";
           localStorage.setItem("pref-theme", "light");
-        } else if(html.dataset.theme === "light") {
+        } else {
+          // Fallback or light -> dark
           html.dataset.theme = "dark";
           localStorage.setItem("pref-theme", "dark");
-        } else {
-          // Fallback or dark -> auto
-          html.dataset.theme = "auto";
-          localStorage.removeItem("pref-theme");
         }
       });
     </script>

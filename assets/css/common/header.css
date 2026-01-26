@@ -89,10 +89,6 @@
   height: 50%;
 }
 
-[data-theme="auto"] .header .features #theme-toggle #theme-auto {
-  display: block;
-}
-
 [data-theme="dark"] .header .features #theme-toggle #theme-dark {
   display: block;
 }

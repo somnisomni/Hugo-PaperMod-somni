@@ -167,15 +167,28 @@
     }
 </script>
 {{- else }}
-{{- /* theme is not specified */}}
+{{- /* theme is auto */}}
 <script>
-    document.querySelector("html").dataset.theme = localStorage.getItem("pref-theme") || 'auto';
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
 </script>
 {{- end }}
-{{- /* theme-toggle is disabled and theme is not specified */}}
+{{- /* theme-toggle is disabled and theme is auto */}}
 {{- else if (and (ne site.Params.defaultTheme "light") (ne site.Params.defaultTheme "dark"))}}
 <script>
-    document.querySelector("html").dataset.theme = 'auto';
+    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
 </script>
 {{- end }}
 
