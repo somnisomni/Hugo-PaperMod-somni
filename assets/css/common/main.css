@@ -1,5 +1,6 @@
 :lang(ko) {
     word-break: keep-all;
+    overflow-wrap: break-word;
 }
 
 .main {
