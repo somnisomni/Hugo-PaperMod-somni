@@ -459,10 +459,12 @@ img.in-text {
 .post-header {
     position: relative;
     display: flex;
-    width: 100%;
+    width: calc(100% - var(--header-width));
     height: auto;
     align-items: end;
     justify-content: center;
+    margin-top: 0;
+    margin-left: var(--header-width);
     padding: calc(var(--gap) * 2) var(--gap);
     overflow: hidden;
 }

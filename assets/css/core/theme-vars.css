@@ -1,6 +1,10 @@
 :root {
     --gap: 24px;
     --content-gap: 20px;
+    --header-width: 6rem;
+    --header-font-size: 60px;    /* magic number to match with somni.one (tailwind text-6xl (3.75rem)) */
+    --header-font-weight: 800;
+
     --nav-width: 1024px;
     --main-width: 840px;
     --header-height: 60px;
