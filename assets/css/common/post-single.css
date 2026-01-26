@@ -99,6 +99,18 @@
     box-shadow: none !important;
 }
 
+.post-content h1 > code,
+.post-content h2 > code,
+.post-content h3 > code,
+.post-content h4 > code,
+.post-content h5 > code,
+.post-content h6 > code {
+    color: currentColor;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
 .post-content a,
 .post-meta .i18n_list li a,
 .toc a:hover {
