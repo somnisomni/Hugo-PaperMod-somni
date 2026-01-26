@@ -5,9 +5,7 @@
     --header-font-size: 60px;    /* magic number to match with somni.one (tailwind text-6xl (3.75rem)) */
     --header-font-weight: 800;
 
-    --nav-width: 1024px;
     --main-width: 840px;
-    --header-height: 60px;
     --footer-height: 60px;
     --post-header-height: 400px;
     --radius: 8px;
@@ -52,4 +50,10 @@
 
 [data-theme="dark"] .list {
     background: var(--theme);
+}
+
+@media (max-width: 768px) {
+    :root {
+        --header-width: 4rem;
+    }
 }
