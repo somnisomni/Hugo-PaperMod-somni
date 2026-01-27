@@ -111,7 +111,7 @@
     padding-top: 0;
 
     background-color: color-mix(in oklab, var(--accent) 80%, transparent);  /* tailwind bg-accent/80 */
-    backdrop-filter: blur(12px);
+    backdrop-filter: blur(6px);
   }
 
   .header .nav {
